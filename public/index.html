@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="/js/fetch.js"></script>
+    <script src="/js/index.js"></script>
+    <title>Фото</title>
+</head>
+<body>
+    <ul class="shadow">
+        <li><label for="cadNum">Кадастровый номер:</label><input type="text" placeholder="00:00:00000:00000" id="cadNum" size="16"></li>
+        <li><span class="btn ripple" id="searchBtn">Найти</span></li>
+        <li style="float:right;"><span class="btn ripple" id="uploadBtn">Отправить</span></li>
+    </ul>
+    <div id="snackbar">Не все поля заполнены</div>
+    <div id="addMore" class="modal">
+        <div class="overlay"></div>
+        <div class="addMoreContent">
+            <div class="addMoreCaption">Добавить ещё фото?</div>
+            <div class="addMoreControls">
+                <span id="yesBtn">Да</span>
+                <span id="noBtn">Нет</span>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="content"></div>
+    <p class="text-center"><a href="https://ocenka.mobi/" target="_blank">Мобильный Оценщик</a> 2019</p>
+</body>
+</html>

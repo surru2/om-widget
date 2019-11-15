@@ -1,0 +1,39 @@
+{
+  "name": "om-zenit-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "babel src -d public/js",
+    "watch": "babel src/index.js --watch --out-file /public/js/index.js",
+    "start": "node app.js",
+    "api:dev": "netlify-lambda serve functions",
+    "api:build": "netlify-lambda build functions"
+  },
+  "author": "panov-va",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.7.2",
+    "aws-sdk": "^2.567.0",
+    "dot": "^1.1.2",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.6",
+    "http-proxy-middleware": "^0.20.0",
+    "mongodb": "^3.3.3",
+    "netlify-lambda": "^1.6.3",
+    "node-uuid": "^1.4.8",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-syntax-async-generators": "^7.2.0",
+    "@babel/plugin-transform-async-to-generator": "^7.7.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "fast-async": "^6.3.8"
+  }
+}

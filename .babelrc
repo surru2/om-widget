@@ -1,0 +1,28 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "ie": 10
+                },
+                "exclude": [
+                    "transform-async-to-generator",
+                    "transform-regenerator"
+                ]
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "module:fast-async",
+            {
+                "spec": true,
+                "compiler": {
+                    "promises": true,
+                    "generators": false
+                }
+            }
+        ]
+    ]
+}
